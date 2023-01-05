@@ -1,0 +1,39 @@
+//Overall body rules
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+//Header with hover effect to show a function
+h1 {
+  text-align: center;
+  padding-top: 0px;
+  color: white;
+}
+h1:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-out;
+}
+
+//Radio button styling
+#filterbar {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+}
+
+//All the rules for the info & img shown of movies
+li {
+  margin: 15px;
+  display: inline-flex;
+  img {
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+  }
+}
+//hover effect when mouse hovers over img
+img:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-out;
+}

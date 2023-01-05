@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Film Finder</title>
+  </head>
+  <header>
+    <a href="" onclick="location.reload()"> <h1>Petit Film Finder</h1></a>
+
+    <!--Bar with differnt options to choose-->
+    <nav>
+      <input
+        type="text"
+        id="searchtext"
+        onkeyup="handleOnSearchEvent()"
+        placeholder="Find"
+      />
+      <ul id="filterbar" name="filterbar">
+        <li>
+          <label for="since"
+            ><input
+              type="radio"
+              id="filter_since"
+              name="filter"
+              value="filter_since"
+              onchange="handleOnChangeEvent()"
+            />Since 2014</label
+          >
+        </li>
+        <li>
+          <label for="avenger"
+            ><input
+              type="radio"
+              id="filter_avenger"
+              name="filter"
+              value="filter_avenger"
+              onchange="handleOnChangeEvent()"
+            />Avenger movies</label
+          >
+        </li>
+        <li>
+          <label for="x_men"
+            ><input
+              type="radio"
+              id="filter_xmen"
+              name="filter"
+              value="filter_xmen"
+              onchange="handleOnChangeEvent()"
+            />X-Men movies</label
+          >
+        </li>
+        <li>
+          <label for="princess"
+            ><input
+              type="radio"
+              id="filter_princess"
+              name="filter"
+              value="filter_princess"
+              onchange="handleOnChangeEvent()"
+            />Princess movies</label
+          >
+        </li>
+        <li>
+          <label for="batman"
+            ><input
+              type="radio"
+              id="filter_batman"
+              name="filter"
+              value="filter_batman"
+              onchange="handleOnChangeEvent()"
+            />Batman movies</label
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <!--Place to append all movies & series to choice-->
+      <ul id="movieList"></ul>
+    </main>
+
+    <script defer type="text/javascript" src="database.js?speed=2"></script>
+    <script defer type="text/javascript" src="script.js?speed=2"></script>
+  </body>
+</html>
